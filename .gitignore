@@ -3,7 +3,7 @@
 .nvmrc
 .prettierignore
 .prettierrc.json
-tsconfig.json
+
 
 # Logs
 logs

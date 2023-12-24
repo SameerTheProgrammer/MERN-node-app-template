@@ -1,8 +1,8 @@
-function example1(name) {
+function example1(name: string) {
     console.log(name);
 }
 
-const example2 = (email) => {
+const example2 = (email: string) => {
     console.log(email);
 };
 
