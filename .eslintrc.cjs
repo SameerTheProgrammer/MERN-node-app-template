@@ -13,9 +13,9 @@ module.exports = {
     },
     root: true,
     rules: {
-        "no-console": "off",
+        "no-console": "error",
         "dot-notation": "error",
-        curly: "error",
+        "curly": "error",
         "capitalized-comments": ["error"],
     },
 };
