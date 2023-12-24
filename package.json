@@ -1,5 +1,5 @@
 {
-  "name": "backend-multi-vendor-ecommerce",
+  "name": "auth-service",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -18,8 +18,7 @@
     "bcrypt": "^5.1.1",
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
-    "mongoose": "^8.0.3",
-    "nodemon": "^3.0.2"
+    "mongoose": "^8.0.3"
   },
   "devDependencies": {
     "@types/node": "^20.10.5",
