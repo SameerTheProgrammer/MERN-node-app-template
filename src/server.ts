@@ -12,5 +12,5 @@ example2("sameer@gmail.com");
 const obj = {
     boolen: "true",
 };
-const bool = obj["boolen"];
+const bool = obj.boolen;
 console.log(bool);
