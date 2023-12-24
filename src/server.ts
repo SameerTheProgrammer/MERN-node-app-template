@@ -8,3 +8,9 @@ const example2 = (email: string) => {
 
 example1("sameer");
 example2("sameer@gmail.com");
+
+const obj = {
+    boolen: "true",
+};
+const bool = obj["boolen"];
+console.log(bool);
