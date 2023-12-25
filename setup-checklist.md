@@ -11,5 +11,5 @@
 -   [x] ExpressJs app setup
 -   [x] Logger setup
 -   [x] Error handling setup
--   [ ] Tests setup
--   [ ] Create template
+-   [x] Tests setup
+-   [x] Create template
