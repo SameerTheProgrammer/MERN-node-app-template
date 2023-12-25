@@ -1,4 +1,4 @@
-Checklist for the express project initial setup
+### Checklist for the express project initial setup
 
 -   [x] Git Setup
 -   [x] Node version managager setup
