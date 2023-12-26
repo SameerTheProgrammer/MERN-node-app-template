@@ -1,20 +1,10 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
 {
 	"name": "Node.js & TypeScript",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/typescript-node:1-20-bullseye",
-
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": {},
-
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	"features": {},
 	"forwardPorts": [5501],
-
-	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "npm install",
-
-	// Configure tool-specific properties.
 	"customizations": {
 		"vscode":{
 			"extensions": [
@@ -52,11 +42,23 @@
 				"editor.fontWeight": "normal",
 				"diffEditor.ignoreTrimWhitespace": false,
 				"editor.renderWhitespace": "all",
-				"editor.action.copyLinesDownAction": "none"
+
+				// Add your key bindings here
+				"keyboard.dispatch": "keyCode",
+				"keyboard.dispatchCtrlShiftAltKeyCode": [
+				  {
+					"key": "ctrl+shift+d",
+					"command": "editor.action.copyLinesUpAction",
+					"when": "editorTextFocus && !editorReadonly"
+				  },
+				  {
+					"key": "ctrl+d",
+					"command": "editor.action.copyLinesDownAction",
+					"when": "editorTextFocus && !editorReadonly"
+				  }
+				]
 			}
 		}
 	}
-
-	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
 }
