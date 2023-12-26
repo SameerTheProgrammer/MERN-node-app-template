@@ -9,7 +9,7 @@ app.get("/", (req, res) => {
     ${req.protocol}://${req.get("host")}${req.originalUrl}`);
 });
 
-app.get("/error", async (req, res, next) => {
+app.get("/httperror", async (req, res, next) => {
     const err = createHttpError(
         401,
         "Hey, you don't have premission to access this page",
