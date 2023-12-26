@@ -12,10 +12,50 @@
 	"forwardPorts": [5501],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	"postCreateCommand": "npm install"
+	"postCreateCommand": "npm install",
 
 	// Configure tool-specific properties.
-	// "customizations": {},
+	"customizations": {
+		"vscode":{
+			"extensions": [
+				"EliverLara.andromeda",
+				"NuclleaR.vscode-extension-auto-import",
+				"mikestead.dotenv",
+				"usernamehw.errorlens",
+				"dbaeumer.vscode-eslint",
+				"SeyyedKhandon.firacode",
+				"xabikos.JavaScriptSnippets",
+				"PKief.material-icon-theme",
+				"esbenp.prettier-vscode",
+				"aaron-bond.better-comments",
+				"kisstkondoros.vscode-codemetrics",
+				"codezombiech.gitignore",
+				"yoavbls.pretty-ts-errors",
+				"eamodio.gitlens",
+				"TabNine.tabnine-vscode",
+				"DanielSanMedium.dscodegpt"
+			],
+			"settings":{
+				"terminal.integrated.confirmOnKill": "always",
+				"editor.fontFamily": "Fira Code",
+				"editor.fontLigatures": true,
+				"workbench.colorTheme": "Andromeda",
+				"workbench.iconTheme": "material-icon-theme",
+				"editor.minimap.enabled": false,
+				"editor.lineHeight": 2,
+				"editor.formatOnSave": true,
+				"[typescript]": {
+				  "editor.defaultFormatter": "esbenp.prettier-vscode"
+				},
+				"terminal.integrated.fontFamily": "'Fira Code'",
+				"editor.mouseWheelZoom": true,
+				"editor.fontWeight": "normal",
+				"diffEditor.ignoreTrimWhitespace": false,
+				"editor.renderWhitespace": "all",
+				"editor.action.copyLinesDownAction": "none"
+			}
+		}
+	}
 
 	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
 	// "remoteUser": "root"
